@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>EduTech - Transforming Online Education</title>
+</head>
+<body>
+    <div  class="navbar background h-nav"> 
+        <div id = "links" class="nav-list v-class">
+            <DIV class="logo"><img src="img/logo.png"  alt="logo"></DIV>
+            <li> <a href="index.html">Home</a> </li>
+            <li><a href="about.html">About</a> </li>
+            <li><a href="courses.html">My Courses</a> </li>
+            <li> <a href="contact.html">Contact</a></li>
+                 
+        </div>
+        <div class="rightNav v-class">
+            <input type="text" name="searchbar" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger" onclick="displayNavItems()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+             <p class="text-big">The Future of Education is here.</p>
+             <p class="text small">During the pandaemic
+                  we combine the best of technology with the best of education </p>
+            <div class="button">
+                <button class="btn">Enroll</button>
+                <button class="btn">Watch Lecture Videos</button>
+            </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="img/logo.png " width="400px" height="220px" alt= "Laptop Image">
+            </div>
+
+        </div>
+
+    </section>
+    <script src="js/responsive.js"></script>
+    <script> 
+    function displayNavItems(){
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    
+    </script>
+    <footer class="background">
+        <p class="text-footer">copyright &copy; 2027 www.EduTech.com - All rights reserved</p>
+        
+    </footer>
+</body>
+</html>
